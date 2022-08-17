@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|| Home Page ||</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" href="./PICS/bar.gif">
+    <script src="./JS/script.js"></script>
+    <style>
+        .row  {
+            position: absolute;
+            top: 8%;
+            left:20%
+        }
+        .row-2  {
+            position: absolute;
+            top: 65%;
+            left:20%
+        }
+        header{
+            position: fixed;
+        }
+        .page {
+            position: fixed;
+            z-index: 5;
+        }
+        a{
+            color: black;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .read-more {
+            position: absolute;
+            z-index: 9;
+        }
+        .about-section {
+            position: absolute;
+            top:900px;
+            width: 1400px;
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }   
+    </style>
+</head>
+<body >
+    <div class="page">
+        <header tabindex="0">Pet Connect <img src="./PICS/bar.gif" class="movin-logo-bar"> <img src="./PICS/userAvatar.png" id="B" class="user-logo">
+        <div id="username" class="username"></div> </header>
+        <script>
+         document.getElementById("username").innerHTML = getCookie("username"); </script>
+        <div id="nav-container">
+          <div class="bg"></div>
+          <div class="button" tabindex="0">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </div>
+          <div id="nav-content" tabindex="0">
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="Buyer_space.php">Browse for pets</a></li>
+              <li><a href="vendor_space.php">Vendor space</a></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="./PICS/Dog_tail.png" alt="Doggy tails" style="width:100%">
+            <h3>Tail Injuries in Dogs | VCA Animal Hospital</h3>
+            <p>Tail injuries are common and can sometimes be managed with home first aid but some cases require veterinary care. Abrasions are mild scrapes that can be treated with daily cleaning and application of antibiotic ointment. Lacerations... <a class="read-more" href="https://vcahospitals.com/know-your-pet/tail-injuries-in-dogs"> Read more.</a></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="./PICS/how-to-choose-kitten.jpg" alt="kitten" style="width:100%">
+            <h3>Tips for Choosing a Kitten That is Happy, Healthy and Right for You</h3>
+            <p>Are you ready for a kitten? Learn Purina's tips to understanding kitten behavior and personality for choosing a happy, healthy kitten that's right for you. <a href="https://www.purina.com/articles/kitten/getting-a-kitten/how-to-choose-a-kitten" class="read-more">Read more.</a></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="./PICS/Rabbit_bedding_hay.png" alt="rabbit" style="width:100%">
+            <h3>Feeding Your Rabbit | VCA Animal Hospital</h3>
+            <p>Rabbits are herbivores and are considered grazers. Rabbits should have a daily diet of mostly hay, a smaller amount of fresh vegetables, and a limited number of pellets. Hay is the most important part of a rabbit's daily intake. A common cause of obesity and soft stool is over-feeding pellets. Rabbits should be fed and provided with fresh water ... <a class="read-more" href="https://vcahospitals.com/know-your-pet/feeding-your-rabbit#:~:text=What%20do%20rabbits%20eat%3F,bulk%20of%20a%20rabbit%27s%20diet">Read more.</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="column">
+          <div class="content">
+            <img src="./PICS/Common-Goldfish-Diseases-Illnesses-And-Treatments.jpg" alt="goldfish" style="width:100%">
+            <h3>Common Goldfish Diseases & Illnesses (And Treatments) - FishLab</h3>
+            <p>Read on and we will answer all your questions about common goldfish diseases and illnesses. How to get a proper diagnosis and treatment for your beloved tropical fish without spending money on veterinarian clinics. <a href="https://fishlab.com/common-goldfish-diseases/" class="read-more">Read more.</a></p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="./PICS/dogs-vomiting-1.jpg" alt="Lights" style="width:100%">
+            <h3>Causes of Dog Vomiting</h3>
+            <p>Learn the symptoms, causes, and treatment of vomiting in dogs. <a class="read-more" href="https://pets.webmd.com/dogs/vomiting-dogs-causes-treatment">Read more.</a> </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="./PICS/1161156-hamster-in-tunnel_350x200.jpg" alt="Nature" style="width:100%">
+            <h3>Breeding and reproduction of hamsters</h3>
+            <p>The best time for hamsters to have offspring is when they are between 10 weeks and 15 months old. Breeders use pairs with 1 male and 1 female, as well as groups of hamsters with 1 male and multiple females. <a class="read-more" href="https://www.msdvetmanual.com/all-other-pets/hamsters/breeding-and-reproduction-of-hamsters#:~:text=The%20best%20time%20for%20hamsters,1%20male%20and%20multiple%20females">Read more.</a></p>
+          </div>
+        </div>
+        </div>
+        <div class="about-section">
+            <h1>About Us </h1>
+            <p>We at Pet Connect want only the best for animals worldwide. We want them to find homes where they will be safe and happy and welcome for their entire lifetime. Our project supports shelters and breeders around the globe and seeks to reduce the number of pets that wind up in shelters or on the streets. We want you to find your animal best friend and soul mate.</p>
+            <p></p>
+          </div>
+</body>
+</html>

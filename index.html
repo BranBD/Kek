@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>|| Welcome ! ||</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" href="./PICS/bar.gif">
+    <script src="./JS/script.js"></script>
+</head>
+<body class="index-body" onload="document.cookie = 'username= Guest' ">
+    <div class="page">
+        <header tabindex="0">Pet Connect <img src="./PICS/bar.gif" class="movin-logo-bar"> <img src="./PICS/userAvatar.png" id="B" class="user-logo">
+        <div id="username" class="username"></div> </header>
+        <script>
+         document.getElementById("username").innerHTML = getCookie("username"); 
+         </script>
+        <div id="nav-container">
+          <div class="bg"></div>
+          <div class="button" tabindex="0">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </div>
+          <div id="nav-content" tabindex="0">
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="Buyer_space.php">Browse for pets</a></li>
+              <li><a href="vendor_space.php">Vendor space</a></li>
+            </ul>
+          </div>
+          <h1 class="index-h1">Welcome to Pet Connect ! </h1>
+          <p class="index-comment">This is the place where pet adoption becomes easy.</p>
+        </div>
+    </div>
+</body>
+</html>
